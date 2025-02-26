@@ -1,0 +1,36 @@
+First check if Java is installed
+> 	java -version
+
+If not, please download Java 21
+
+
+Open cmd or PowerShell in the folder where the file is located:
+>	cd C:\.. 
+
+Then Start API with:
+>	java -jar pdfScanner-0.0.1-SNAPSHOT.jar
+
+
+In another PowerShell with 1 URL: 
+>	curl.exe --%  -i -X POST "http://localhost:8080/api/pdf/scan" -H "Content-Type: application/json" -d "{""url"": ""https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf""}" 
+
+
+In another PowerShell with more URLs: 
+>	curl.exe --% -i -X POST "http://localhost:8080/api/pdf/scan" -H "Content-Type: application/json" -d "{""urls"": [""https://example.com/sample.pdf"", ""https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf""]}"
+
+
+
+JSON for Request looks like this:
+{
+  "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+}
+
+and
+
+
+{
+  "urls": [
+    "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    "https://example.com/sample.pdf"
+  ]
+}
