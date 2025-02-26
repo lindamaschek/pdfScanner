@@ -1,11 +1,12 @@
+Used Libarys: Spring Boot (to run Spring Application), PDFBox to read and handle PDFs
 First check if Java is installed
 > 	java -version
 
 If not, please download Java 21
 
 
-Open cmd or PowerShell in the folder where the file is located:
->	cd C:\.. 
+Open cmd or PowerShell in the folder where the file is located (target Folder):
+>	cd target
 
 Then Start API with:
 >	java -jar pdfScanner-0.0.1-SNAPSHOT.jar
