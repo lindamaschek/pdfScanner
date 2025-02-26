@@ -5,8 +5,7 @@ First check if Java is installed
 If not, please download Java 21
 
 
-Open cmd or PowerShell in the folder where the file is located (target Folder):
->	cd target
+Open cmd or PowerShell in the folder where the file <pdfScanner-0.0.1-SNAPSHOT.jar> is located.
 
 Then Start API with:
 >	java -jar pdfScanner-0.0.1-SNAPSHOT.jar
