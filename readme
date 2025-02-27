@@ -1,4 +1,7 @@
 Used Libarys: Spring Boot (to run Spring Application), PDFBox to read and handle PDFs
+
+Configure the Blacklisted IBANS in src/main/resources/blacklisted_ibans.json
+
 First check if Java is installed
 > 	java -version
 
